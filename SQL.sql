@@ -26,7 +26,7 @@ CREATE TABLE PLAYERS(
     PLAYER_DISTANCE int(4),
     PLAYER_SHIELDING int(4),
     PLAYER_FISHING int(4),
-    SEX varchar(6),
+    SEX int(1),
     STAMINA int(50)
 )
 
