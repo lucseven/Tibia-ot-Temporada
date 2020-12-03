@@ -21,11 +21,11 @@ $(function() {
 // **********************
 
 $(function() {
-   $('.cadastro').submit(function(){
+   $('.createAccount').submit(function(){
        $.ajax({
-           url: '../pages/cadastro.php',
+           url: '../pages/createAccount.php',
            type: 'POST',
-           data: $('.cadastro').serializa(),
+           data: $('.createAccount').serializa(),
            seccess: function(data){
                $('.box').html(data);
            }
