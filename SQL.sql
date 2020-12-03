@@ -9,7 +9,7 @@ CREATE TABLE ACCOUNTS(
 )
 
 CREATE TABLE PLAYERS(
-    PLAYER_ID varchar(5) NOT NULL AUTO_INCREMENT,
+    PLAYER_ID int(5) NOT NULL AUTO_INCREMENT,
     PLAYER_NAME varchar(2),
     PLAYER_VOCATION varchar(2),
     PLAYER_LEVEL int(4),
@@ -31,49 +31,80 @@ CREATE TABLE PLAYERS(
 )
 
 CREATE TABLE PLAYER_ITEMS(
-
+    ID int(5) NOT NULL AUTO_INCREMENT,
+    NOME char(30),
+    TIPO char(30),
+    QUANTIDADE int(10)
 )
 
 CREATE TABLE PLAYER_ITEMS_BOX(
-
+    ID int(5) NOT NULL AUTO_INCREMENT,
+    PLAYER_NAME char(30),
+    NOME char(30),
+    TIPO char(30),
+    QUANTIDADE int(10)
 )
 
 CREATE TABLE PLAYER_SPELLS(
-    
+    ID int(5) NOT NULL AUTO_INCREMENT,
+    PLAYER_NAME char(30),
+    NOME char(30),
+    TIPO char(30),
+    ELEMENT char(20)
 )
 
 CREATE TABLE PLAYER_KILLS(
-
+    PLAYER_NAME char(30),
+    MOB char(30),
+    PLAYER char(30),
+    EFECT char(30)
 )
 
 CREATE TABLE DEAD_PLAYERS(
-
+    PLAYER_NAME char(30),
+    PLAYER_LEVEL int(4)
 )
 
 CREATE TABLE ITENS_SHOP(
-
+    ID int(5) NOT NULL AUTO_INCREMENT,
+    NOME char(30),
+    TIPO char(30),
+    PRICE int(10),
+    QUANTIDADE int(10)
 )
 
 CREATE TABLE SHOP_HISTORY(
-
-)
-
-CREATE TABLE SHOP_BUY(
-
+    ID int(5) NOT NULL AUTO_INCREMENT,
+    NOME char(30),
+    TIPO char(30),
+    PRICE int(10),
+    QUANTIDADE int(10)
 )
 
 CREATE TABLE TIBIA_COINS(
-
-)
-
-CREATE TABLE MARKET_HISTORY(
-
+    PLAYER_NAME char(30),
+    QUANTIDADE int(10)
 )
 
 CREATE TABLE MARKET_ITEMS(
-
+    ID int(5) NOT NULL AUTO_INCREMENT,
+    NOME char(30),
+    TIPO char(30),
+    QUANTIDADE int(10)
 )
 
 CREATE TABLE MARKET_OFFERS(
+    ID int(5) NOT NULL AUTO_INCREMENT,
+    NOME char(30),
+    TIPO char(30),
+    PRICE int(10),
+    QUANTIDADE int(10)
+)
 
+CREATE TABLE MARKET_HISTORY(
+    ID varchar(5) NOT NULL AUTO_INCREMENT,
+    NOME char(30),
+    TIPO char(30),
+    PRICE int(10),
+    QUANTIDADE int(10)
 )
